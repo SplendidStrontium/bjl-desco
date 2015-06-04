@@ -8,10 +8,10 @@
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
+    <ul id="navbar"> 
+      <% [["Home", :root], ["About", :about], ["Contact", :contact]].each do |name,url| %>
+      <li><%= link_to_unless_current(name, url) %></li>
+    <% end %>
     </ul>
   </nav>
   <div id="content">
