@@ -11,6 +11,7 @@
 /log/*
 !/log/.keep
 /tmp
+*.swp
 
 # Ignore database config files
 /config/database.yml

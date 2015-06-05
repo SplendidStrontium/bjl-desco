@@ -6,9 +6,12 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body onload="draw();">
+  <canvas id="blogo" width="500" height="150">
+    <!--TODO: put fallback img inside here for older browsers-->
+  </canvas>
   <nav>
-    <ul id="navbar"> 
+    <ul id="navbar">
       <% [["Home", :root], ["About", :about], ["Contact", :contact]].each do |name,url| %>
       <li><%= link_to_unless_current(name, url) %></li>
     <% end %>
