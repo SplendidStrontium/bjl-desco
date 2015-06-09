@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>B.J. Laura & Son, and Desco Refrigeration of Flushing, New York</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= yield :head %>
 </head>
 <body onload="draw();">
   <canvas id="blogo" width="500" height="150">
