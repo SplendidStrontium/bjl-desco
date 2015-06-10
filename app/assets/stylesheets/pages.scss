@@ -2,15 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#map-container{
-  width: 700px;
-  height: 400px;
-  background-color: #ccc;
-  margin-left: auto;
-  margin-right: auto;
+#contact-info{
+  float: left;
+  width: 300px;
 }
 
-#map-canvas{
-  width: 700px;
+#map-container{
+  border: none;
+  width: 650px;
+  height: 400px;
+  background-color: #ccc;
+  margin-left: 325px;
+  margin-right: 25px;
+}
+
+#mapcanvas{
+  border: none;
+  width: 650px;
   height: 400px;
 }

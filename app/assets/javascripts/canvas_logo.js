@@ -88,7 +88,7 @@ function drw_title(context){
 function drw_son(context){
   context.font = "53px nathaniel";
   context.fillStyle = '#222';
-  context.fillText("& Son", 277, 68);
+  context.fillText("& Son, Inc", 277, 73);
 }
 
 function drw_subtitle(context){
