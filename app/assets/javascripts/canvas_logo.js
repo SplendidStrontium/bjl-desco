@@ -3,7 +3,7 @@
 //  alert("please do!");
 //});
 
-function draw(){
+$(document).ready(function draw(){
   var canvas = document.getElementById('blogo');
   if (canvas.getContext){
     var ctx = canvas.getContext('2d');
@@ -47,7 +47,7 @@ function draw(){
     /*text bj laura*/
     drw_title(ctx);
   }
-}
+});
 
 /* draw title text */
 function drw_title(context){
