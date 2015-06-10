@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <%= yield :head %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= yield :head %>
+
 </head>
-<body onload="draw();">
+<body id="bdycontainer">
   <canvas id="blogo" width="500" height="150">
     <!--TODO: put fallback img inside here for older browsers-->
   </canvas>
