@@ -9,12 +9,24 @@ $(document).ready(function draw(){
     var ctx = canvas.getContext('2d');
 
     /*draw the bolt top for underline*/
-    drw_bolt(ctx, 20, 120);
-    drw_bolt(ctx, 45, 120);
-    drw_bolt(ctx, 70, 120);
+    /*TODO: Fix this, it pains me */
+    drw_bolt(ctx, 10, 80);
+    drw_bolt(ctx, 35, 80);
+    drw_bolt(ctx, 60, 80);
+    drw_bolt(ctx, 85, 80);
+    drw_bolt(ctx, 110, 80);
+    drw_bolt(ctx, 135, 80);
+    drw_bolt(ctx, 160, 80);
+    drw_bolt(ctx, 185, 80);
+    drw_bolt(ctx, 210, 80);
+    drw_bolt(ctx, 235, 80);
 
     /*text bj laura*/
     drw_title(ctx);
+    drw_son(ctx);
+    drw_subtitle(ctx);
+    drw_phone(ctx);
+    drw_email(ctx);
   }
 });
 
@@ -68,7 +80,31 @@ function drw_bolt(context, strt_x, strt_y){
 
 /* draw title text */
 function drw_title(context){
-  context.font = "30px serif";
-  context.fillStyle = 'black';
-  context.fillText("B.J. Laura & Son", 20, 70);
+  context.font = "55px sanchez_regular";
+  context.fillStyle = '#111';
+  context.fillText("B.J. Laura", 5, 60);
+}
+
+function drw_son(context){
+  context.font = "53px nathaniel";
+  context.fillStyle = '#222';
+  context.fillText("& Son", 277, 68);
+}
+
+function drw_subtitle(context){
+  context.font = "12px sanchez_italic";
+  context.fillStyle = '#333';
+  context.fillText("garage doors and general contracting", 19, 109);
+}
+
+function drw_phone(context){
+  context.font = "40px sanchez_regular";
+  context.fillStyle = '#222';
+  context.fillText("718-878-3938", 710, 80);
+}
+
+function drw_email(context){
+  context.font = "24px sanchez_regular";
+  context.fillStyle = '#333';
+  context.fillText("dck@bjlaura.com", 780, 110);
 }

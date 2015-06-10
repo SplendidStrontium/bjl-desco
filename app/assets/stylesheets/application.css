@@ -14,6 +14,45 @@
  *= require_self
  */
 
+@font-face {
+    font-family: 'nathaniel';
+    src: url('/assets/nathaniel-webfont.eot');
+    src: url('/assets/nathaniel-webfont.eot?#iefix') format('embedded-opentype'),
+    	url('/assets/nathaniel-webfont.woff2') format('woff2'),
+         url('/assets/nathaniel-webfont.woff') format('woff'),
+         url('/assets/nathaniel-webfont.ttf') format('truetype'),
+         url('/assets/nathaniel-webfont.svg#jellyka_-_nathaniel_a_mysteRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sanchez_italic';
+    src: url('/assets/sanchezregular-ita-webfont.eot');
+    src: url('/assets/sanchezregular-ita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/sanchezregular-ita-webfont.woff2') format('woff2'),
+         url('/assets/sanchezregular-ita-webfont.woff') format('woff'),
+         url('/assets/sanchezregular-ita-webfont.ttf') format('truetype'),
+         url('/assets/sanchezregular-ita-webfont.svg#sanchez_regular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sanchez_regular';
+    src: url('/assets/sanchezregular-webfont.eot');
+    src: url('/assets/sanchezregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/sanchezregular-webfont.woff2') format('woff2'),
+         url('/assets/sanchezregular-webfont.woff') format('woff'),
+         url('/assets/sanchezregular-webfont.ttf') format('truetype'),
+         url('/assets/sanchezregular-webfont.svg#sanchez_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -26,7 +65,10 @@ body{
 }
 
 canvas{
-  border: 1px solid black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #aaa;
+  margin-top: 5px;
 }
 
 nav{
@@ -36,6 +78,7 @@ nav{
 }
 
 nav li{
+  font-family: 'sanchez_regular';
   font-weight: bold;
   display: inline;
   color: #111;
