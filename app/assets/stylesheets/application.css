@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
 //= depend_on_asset "backuplogo.png"
 
 
@@ -22,17 +21,24 @@ body{
   padding: 0;
 }
 
-#bdycontainer{
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+#bgfill{
+  background-color: #888;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
-canvas{
-  border-style: solid;
-  border-width: 1px;
-  border-color: #aaa;
-  margin-top: 5px;
+#bdycontainer{
+  width: 1000px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ddd;
+}
+
+#blogo{
+  background-color: #fff;
 }
 
 nav{

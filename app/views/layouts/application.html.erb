@@ -7,23 +7,26 @@
   <%= csrf_meta_tags %>
 
 </head>
-<body id="bdycontainer">
-  <!--@TODO: canvas not using custom font on heroku -->
-  <canvas id="blogo" width="1000" height="120"> 
-    <!--TODO: put fallback img inside here for older browsers-->
+<body> 
+  <canvas id="bgfill"></canvas>
+    <div id="bdycontainer">
+      <!--@TODO: canvas not using custom font on heroku -->
+      <canvas id="blogo" width="1000" height="120"> 
+	<!--TODO: put fallback img inside here for older browsers-->
 	<%= image_tag "backuplogo.png" %>
-  <!--  -->
-  </canvas>
-  <nav>
-    <ul id="navbar">
-      <% [["Home", :root], ["About", :about], ["Contact", :contact]].each do |name,url| %>
-      <li><%= link_to_unless_current(name, url) %></li>
-    <% end %>
-    </ul>
-  </nav>
+	<!--  -->
+      </canvas>
+    <nav>
+      <ul id="navbar">
+	<% [["Home", :root], ["About", :about], ["Contact", :contact]].each do |name,url| %>
+	  <li><%= link_to_unless_current(name, url) %></li>
+	<% end %>
+      </ul>
+    </nav>
   <div id="content">
     <%= yield %>
+    <br/><hr> 
   </div>
-
+</div>
 </body>
 </html>
