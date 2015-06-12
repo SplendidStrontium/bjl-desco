@@ -4,26 +4,36 @@
 
 #home_summary{
   width: 900px;
+  font-family: 'sanchez_regular';
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about_us{
+  width: 900px;
+  font-family: 'sanchez_regular';
   margin-left: auto;
   margin-right: auto;
 }
 
 #contact-info{
+  margin-left: 50px;
+  font-family: 'sanchez_regular';
   float: left;
   width: 300px;
 }
 
 #map-container{
   border: none;
-  width: 650px;
+  width: 600px;
   height: 400px;
   background-color: #ccc;
-  margin-left: 325px;
-  margin-right: 25px;
+  margin-left: auto;
+  margin-right: 50px;
 }
 
 #mapcanvas{
   border: none;
-  width: 650px;
+  width: 600px;
   height: 400px;
 }

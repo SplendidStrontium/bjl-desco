@@ -9,7 +9,7 @@ $(document).ready(function drawbg(){
     var ctr_y = 0;
     var rad   = 30;
     var r_prime = 35;
-    var spokes = 23;
+    var spokes = 21;
     var dist = 90;
     
     while( (ctr_x - rad) < window.innerWidth) {
