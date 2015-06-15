@@ -46,5 +46,8 @@ group :development, :test do
 
   # Since rails plugin system no longer in rails4, as per heroku's getting started
   gem 'rails_12factor', group: :production
+
+# help get mail up and running
+gem 'mail'
 end
 
