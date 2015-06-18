@@ -15,10 +15,24 @@
  */
 //= depend_on_asset "backuplogo.png"
 
+html{
+	height: 100%;
+  width: 100%;
+}
 
 body{
-  margin: 0;
+  width: 1000px;
+  margin: 0 auto;
   padding: 0;
+  overflow: hidden;
+}
+
+#content-container{
+	width: 1000px;
+	height: 100%;
+  position: relative;
+  overflow: auto;
+  background-color: #ddd;
 }
 
 #bgfill{
@@ -29,15 +43,10 @@ body{
   left: 0;
 }
 
-#bdycontainer{
-  width: 1000px;
+#blogo{
   margin-top: 8px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ddd;
-}
-
-#blogo{
   background-color: #fff;
 }
 
@@ -49,7 +58,7 @@ nav{
   border-bottom: 1px solid #000;
 }
 
-nav li{
+nav > ul > li{
   font-family: 'sanchez_regular';
   font-weight: bold;
   display: inline;
@@ -62,12 +71,21 @@ nav li{
   margin-left: 10px;
 }
 
-nav li a{
+nav > ul > li > a{
   font-weight: normal;
   text-decoration: none;
+  color: #008;
 }
 
-nav li:hover{
+nav > ul > li > a:visited{
+  color: #008;
+}
+
+nav > ul > li:hover{
   background-color: #777;
   box-shadow: none;
+}
+
+#end-hr{
+  margin: 0 0;
 }

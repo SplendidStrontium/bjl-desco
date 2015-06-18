@@ -9,7 +9,6 @@
 </head>
 <body> 
   <canvas id="bgfill"></canvas>
-    <div id="bdycontainer">
       <!--@TODO: canvas not using custom font on heroku -->
       <canvas id="blogo" width="1000" height="120"> 
 	<!--TODO: put fallback img inside here for older browsers-->
@@ -18,15 +17,16 @@
       </canvas>
     <nav>
       <ul id="navbar">
-	<% [["Home", :root], ["About", :about], ["Contact", :contact]].each do |name,url| %>
+	<% [["Home", :root], ["About Us", :about], ["Our Clients", :clients], ["Contact Us", :contact]].each do |name,url| %>
 	  <li><%= link_to_unless_current(name, url) %></li>
 	<% end %>
       </ul>
     </nav>
-  <div id="content">
+  <div id="content-container">
     <%= yield %>
-    <br/><hr> 
+    <br/> 
+    <hr id="end-hr" />
   </div>
-</div>
+
 </body>
 </html>
