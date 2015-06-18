@@ -28,9 +28,8 @@ body{
 }
 
 #content-container{
-	width: 1000px;
-	height: 100%;
-  position: relative;
+	width: inherit;
+  float: left;
   overflow: auto;
   background-color: #ddd;
 }
@@ -44,15 +43,15 @@ body{
 }
 
 #blogo{
-  margin-top: 8px;
   margin-left: auto;
   margin-right: auto;
+	margin-top: 5px;
   background-color: #fff;
 }
 
 nav{
+	height: 55px;
   background-color: #777;
-  margin: 0;
   overflow: hidden;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
