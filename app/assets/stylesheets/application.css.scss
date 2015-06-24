@@ -16,22 +16,23 @@
 //= depend_on_asset "backuplogo.png"
 
 html{
-	height: 100%;
   width: 100%;
+  background-color: #888;
 }
 
 body{
   width: 1000px;
   margin: 0 auto;
   padding: 0;
-  overflow: hidden;
+	overflow: auto;
 }
 
 #content-container{
-	width: inherit;
+	width: 1000px;
   float: left;
-  overflow: auto;
   background-color: #ddd;
+	border-bottom: 1px solid #000;
+	display: inline-block;
 }
 
 #bgfill{
@@ -45,7 +46,7 @@ body{
 #blogo{
   margin-left: auto;
   margin-right: auto;
-	margin-top: 5px;
+	margin-top: 10px;
   background-color: #fff;
 }
 
@@ -83,8 +84,4 @@ nav > ul > li > a:visited{
 nav > ul > li:hover{
   background-color: #777;
   box-shadow: none;
-}
-
-#end-hr{
-  margin: 0 0;
 }
