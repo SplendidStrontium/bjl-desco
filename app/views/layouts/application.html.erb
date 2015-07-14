@@ -17,7 +17,7 @@
       </canvas>
     <nav>
       <ul id="navbar">
-	<% [["Home", :root], ["About Us", :about], ["Our Clients", :clients], ["Contact Us", :contact]].each do |name,url| %>
+	<% [["Home", :root], ["About Us", :about], ["Our Clients", :clients], ["Contact Us", :contact], ["Log In / Sign Up", :signup]].each do |name,url| %>
 	  <li><%= link_to_unless_current(name, url) %></li>
 	<% end %>
       </ul>
