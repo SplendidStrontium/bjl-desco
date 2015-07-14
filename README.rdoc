@@ -4,6 +4,8 @@ currently hosted at https://hidden-shelf-8291.herokuapp.com/
 
 == todo
 
+* enable users to log in / out
+
 * using img banner instead of canvas b/c heroku can't find custom fonts
 
 * get custom domain(s) up and running
