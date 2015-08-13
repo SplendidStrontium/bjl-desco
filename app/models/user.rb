@@ -7,5 +7,14 @@ class User < ActiveRecord::Base
 										uniqueness: { case_sensitive: false }
 
 	has_secure_password
-	validates :password, presence: true, length: { minimum: 6 }
+	validates :password, 
+		:length => { :minimum => 6, :if => :validate_password? },
+		:confirmation => { :if => :validate_password? }
+
+	private
+
+	def validate_password?
+		password.present? || password_confirmation.present?
+	end
+
 end

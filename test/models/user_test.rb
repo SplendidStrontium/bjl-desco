@@ -7,5 +7,8 @@ class UserTest < ActiveSupport::TestCase
 											password: "foobar", password_confirmation: "foobar")
 	end
 
+	def "should be valid" do
+		assert @user.valid?
+	end
 
 end
