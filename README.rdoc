@@ -1,6 +1,6 @@
 == BJ Laura & Son, Desco Refrigeration
 
-currently hosted at https://hidden-shelf-8291.herokuapp.com/
+found at both www.bjlaura.com AND www.descoservice.com
 
 == todo
 
