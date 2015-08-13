@@ -1,4 +1,6 @@
 Rails.application.routes.draw do 
+  get 'sessions/new'
+
   get 'users/new'
 
   #root 'pages#home'
@@ -8,6 +10,9 @@ Rails.application.routes.draw do
   get '/contact', :to => 'pages#contact' 
   get '/clients', :to => 'pages#clients'
 	get '/signup', :to => 'users#new'
+	get '/login', :to => 'sessions#new'
+	post '/login', :to => 'sessions#create'
+	get '/logout', :to => 'sessions#destroy'
 	resources :users
   
   # The priority is based upon order of creation: first created -> highest priority.
