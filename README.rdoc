@@ -8,8 +8,6 @@ found at both www.bjlaura.com AND www.descoservice.com
 
 * using img banner instead of canvas b/c heroku can't find custom fonts
 
-* get custom domain(s) up and running
-
 * banner for front
 
 * investigate options for displaying items for sale
