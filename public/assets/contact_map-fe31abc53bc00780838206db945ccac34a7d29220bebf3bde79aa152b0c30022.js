@@ -1,0 +1,1 @@
+var map;$(document).ready(function(){var e=new google.maps.LatLng(40.7547655,-73.8048775),a={center:e,zoom:13};map=new google.maps.Map(document.getElementById("mapcanvas"),a);new google.maps.Marker({position:e,title:"B.J. Laura & Son",map:map})}),$(document).ready(function(){google.maps.event.trigger(map,"resize")}),google.maps.event.addDomListener(window,"load",initialize);
