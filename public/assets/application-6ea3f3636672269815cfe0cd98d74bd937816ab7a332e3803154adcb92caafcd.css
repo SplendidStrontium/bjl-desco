@@ -3859,34 +3859,39 @@ select[multiple].input-lg,
 }
 
 /* line 8, /home/paige/.rvm/gems/ruby-2.2.2-dev/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .help-block,
+.has-error .help-block, .field_with_errors .help-block,
 .has-error .control-label,
+.field_with_errors .control-label,
 .has-error .radio,
+.field_with_errors .radio,
 .has-error .checkbox,
+.field_with_errors .checkbox,
 .has-error .radio-inline,
-.has-error .checkbox-inline {
+.field_with_errors .radio-inline,
+.has-error .checkbox-inline,
+.field_with_errors .checkbox-inline {
   color: #a94442;
 }
 /* line 17, /home/paige/.rvm/gems/ruby-2.2.2-dev/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .form-control {
+.has-error .form-control, .field_with_errors .form-control {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 20, /home/paige/.rvm/gems/ruby-2.2.2-dev/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .form-control:focus {
+.has-error .form-control:focus, .field_with_errors .form-control:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
 }
 /* line 27, /home/paige/.rvm/gems/ruby-2.2.2-dev/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .input-group-addon {
+.has-error .input-group-addon, .field_with_errors .input-group-addon {
   color: #a94442;
   border-color: #a94442;
   background-color: #f2dede;
 }
 /* line 33, /home/paige/.rvm/gems/ruby-2.2.2-dev/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .form-control-feedback {
+.has-error .form-control-feedback, .field_with_errors .form-control-feedback {
   color: #a94442;
 }
 
@@ -8108,9 +8113,32 @@ input {
 }
 
 /* line 86, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+.explanatorytxt {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* line 93, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 .btn-primary {
   margin-top: 20px;
   font-size: 1.6em;
+}
+
+/* line 98, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+#error_explanation {
+  color: red;
+}
+/* line 100, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+#error_explanation ul {
+  color: red;
+  margin: 0 0 30px 0;
+}
+
+/* line 108, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+.field_with_errors .form-control {
+  color: #a94442;
 }
 @font-face {
   font-family: 'nathaniel';
@@ -8136,57 +8164,54 @@ input {
 /* line 5, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #home_summary {
   height: 100%;
-  width: 900px;
   font-family: 'sanchez_regular';
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 13, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 12, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #about_us {
   height: 100%;
-  width: 900px;
   font-family: 'sanchez_regular';
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 21, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 19, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #our_clients {
   height: 100%;
-  width: 900px;
   font-family: 'sanchez_regular';
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 29, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 26, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #contact-info {
   height: 100%;
-  margin-left: 50px;
+  margin-left: 5px;
   font-family: 'sanchez_regular';
+  font-size: 0.9em;
   float: left;
-  width: 300px;
+  width: 200px;
 }
 
-/* line 37, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 35, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-container {
   border: none;
-  width: 600px;
+  width: 500px;
   height: 400px;
   background-color: #ccc;
   margin-left: auto;
-  margin-right: 50px;
 }
 
-/* line 46, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 43, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #mapcanvas {
   border: none;
-  width: 600px;
+  width: 500px;
   height: 400px;
 }
 
-/* line 52, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 49, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #email-topbar {
   width: 50%;
   color: #aaa;
@@ -8195,6 +8220,7 @@ input {
 #login_form {
   height: 100%;
   font-family: 'sanchez_regular';
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -8205,14 +8231,6 @@ input {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* line 13, /home/paige/bjldesco/app/assets/stylesheets/users.scss */
-.explanatorytxt {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 35px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -8233,42 +8251,33 @@ input {
 html {
   width: 100%;
   background-color: #888;
+  background-image: url(/assets/bg-50tilepx-eggblue.jpg);
 }
 
-/* line 23, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 24, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 body {
-  width: 1000px;
-  margin: 0 auto;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   overflow: auto;
 }
 
-/* line 29, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 31, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+#logo_top {
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* line 36, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 #content-container {
-  width: 1000px;
-  float: left;
+  padding: 10px;
+  width: 760px;
   background-color: #ddd;
   border-bottom: 1px solid #000;
   display: inline-block;
 }
 
-/* line 37, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
-#bgfill {
-  background-color: #888;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-
-/* line 45, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
-#blogo {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  background-color: #fff;
-}
-
-/* line 52, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 44, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav {
   height: 40px;
   background-color: #777;
@@ -8277,7 +8286,7 @@ nav {
   border-bottom: 1px solid #000;
 }
 
-/* line 60, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 52, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li {
   font-family: 'sanchez_regular';
   font-weight: bold;
@@ -8288,22 +8297,21 @@ nav > ul > li {
   box-shadow: 0px 1px 3px 3px #555;
   line-height: 2em;
   padding: 0.5em 0.5em;
-  margin-left: 10px;
 }
 
-/* line 73, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 64, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li > a {
   font-weight: normal;
   text-decoration: none;
   color: #008;
 }
 
-/* line 79, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 70, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li > a:visited {
   color: #008;
 }
 
-/* line 83, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 74, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li:hover {
   background-color: #777;
   box-shadow: none;
