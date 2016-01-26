@@ -10828,16 +10828,16 @@ $(document).ready(function drawbg(){
     var spokes = 19;
     var dist = 90;
     
-    while( (ctr_x - rad) < window.innerWidth) {
+    while( (ctr_x - rad) < ctx.canvas.width) {
     
-      while( (ctr_y - rad) < window.innerHeight) {
+      while( (ctr_y - rad) < ctx.canvas.height) {
 	drw_gear(ctx, ctr_x, ctr_y, rad, r_prime, spokes);
 	ctr_y = ctr_y + dist;
       }  
     ctr_x = ctr_x + dist;
     ctr_y = dist/2;
 
-      while( (ctr_y - rad) < window.innerHeight) {
+      while( (ctr_y - rad) < ctx.canvas.height) {
 	drw_gear(ctx, ctr_x, ctr_y, rad, r_prime, spokes);
 	ctr_y = ctr_y + dist;
       }  
@@ -11004,7 +11004,7 @@ $(document).ready(function initialize() {
     center: bjlLoc,
     zoom: 13
   };
-  map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var marker = new google.maps.Marker({
     position: bjlLoc,
     title: 'B.J. Laura & Son',
@@ -11021,6 +11021,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
+(function() {
+
+
+}).call(this);
+(function() {
+
+
+}).call(this);
 (function() {
 
 

@@ -8038,7 +8038,7 @@ body {
 /* typography */
 /* line 12, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 h2 {
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 /* mixins, variables, etc */
@@ -8117,7 +8117,6 @@ input {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: 35px;
 }
 
 /* line 93, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
@@ -8194,7 +8193,7 @@ input {
   width: 250px;
 }
 
-/* line 35, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 34, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-container {
   border: none;
   width: 550px;
@@ -8203,14 +8202,14 @@ input {
   margin-left: auto;
 }
 
-/* line 43, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 42, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-canvas {
   border: none;
   width: 550px;
   height: 400px;
 }
 
-/* line 49, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 48, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #email-topbar {
   width: 50%;
   color: #aaa;
@@ -8243,16 +8242,19 @@ input {
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ * note: later replace require_tree with stuff in config
+ * config . assets . paths < < File . join ( Rails.root, '/my/special/path')
+ *
 
 
  */
-/* line 18, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 21, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 html {
   width: 100%;
   background-color: #363;
 }
 
-/* line 23, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 26, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 body {
   width: 800px;
   margin-left: auto;
@@ -8260,36 +8262,33 @@ body {
   overflow: auto;
 }
 
-/* line 30, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 33, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 #logo_top {
   padding: 5px;
   text-align: center;
   background-color: #363;
 }
 
-/* line 36, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 39, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 #container {
-  background-color: #000;
   display: inline-block;
 }
 
-/* line 41, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 43, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 #content-container {
-  padding: 10px;
   width: 800px;
-  background-color: #ddd;
   border-bottom: 1px solid #000;
   display: inline-block;
+  background-color: #eee;
 }
 
-/* line 49, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 50, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav {
   height: 35px;
   line-height: 35px;
   background-color: #333;
   overflow: hidden;
   border: 1px solid #000;
-  border-radius: 0px;
 }
 
 /* line 58, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
@@ -8297,10 +8296,10 @@ nav > ul > li {
   font-family: 'sanchez_regular';
   font-weight: bold;
   display: inline-block;
-  color: #888;
+  color: #bbb;
 }
 
-/* line 67, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 65, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li a {
   font-weight: normal;
   text-decoration: none;
@@ -8308,7 +8307,7 @@ nav > ul > li a {
   padding: 12px;
 }
 
-/* line 74, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 72, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li a:hover {
   background-color: #222;
   color: #999;

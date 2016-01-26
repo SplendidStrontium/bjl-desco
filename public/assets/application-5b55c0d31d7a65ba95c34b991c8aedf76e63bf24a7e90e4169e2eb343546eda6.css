@@ -8038,7 +8038,7 @@ body {
 /* typography */
 /* line 12, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 /* mixins, variables, etc */
@@ -8117,7 +8117,6 @@ input {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: 35px;
 }
 
 /* line 93, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
@@ -8164,57 +8163,53 @@ input {
 /* line 5, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #home_summary {
   height: 100%;
-  width: 900px;
   font-family: 'sanchez_regular';
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 13, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 12, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #about_us {
   height: 100%;
-  width: 900px;
   font-family: 'sanchez_regular';
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 21, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 19, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #our_clients {
   height: 100%;
-  width: 900px;
   font-family: 'sanchez_regular';
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 29, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 26, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #contact-info {
   height: 100%;
-  margin-left: 50px;
   font-family: 'sanchez_regular';
+  font-size: 0.9em;
   float: left;
-  width: 300px;
+  width: 250px;
 }
 
-/* line 37, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 34, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-container {
   border: none;
-  width: 600px;
+  width: 550px;
   height: 400px;
   background-color: #ccc;
   margin-left: auto;
-  margin-right: 50px;
 }
 
-/* line 46, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
-#mapcanvas {
+/* line 42, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+#map-canvas {
   border: none;
-  width: 600px;
+  width: 550px;
   height: 400px;
 }
 
-/* line 52, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 48, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #email-topbar {
   width: 50%;
   color: #aaa;
@@ -8247,85 +8242,72 @@ input {
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ * note: later replace require_tree with stuff in config
+ * config . assets . paths < < File . join ( Rails.root, '/my/special/path')
+ *
 
 
  */
-/* line 18, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 21, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 html {
   width: 100%;
-  background-color: #888;
+  background-color: #363;
 }
 
-/* line 23, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 26, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 body {
-  width: 1000px;
-  margin: 0 auto;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   overflow: auto;
 }
 
-/* line 29, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 33, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+#logo_top {
+  padding: 5px;
+  text-align: center;
+  background-color: #363;
+}
+
+/* line 39, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+#container {
+  display: inline-block;
+}
+
+/* line 43, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 #content-container {
-  width: 1000px;
-  float: left;
-  background-color: #ddd;
+  width: 800px;
   border-bottom: 1px solid #000;
   display: inline-block;
 }
 
-/* line 37, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
-#bgfill {
-  background-color: #888;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
-
-/* line 45, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
-#blogo {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  background-color: #fff;
-}
-
-/* line 52, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 49, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav {
-  height: 40px;
-  background-color: #777;
+  height: 35px;
+  line-height: 35px;
+  background-color: #333;
   overflow: hidden;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border: 1px solid #000;
 }
 
-/* line 60, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 57, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li {
   font-family: 'sanchez_regular';
   font-weight: bold;
-  display: inline;
-  color: #111;
-  background-color: #999;
-  border-radius: 5px;
-  box-shadow: 0px 1px 3px 3px #555;
-  line-height: 2em;
-  padding: 0.5em 0.5em;
-  margin-left: 10px;
+  display: inline-block;
 }
 
-/* line 73, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
-nav > ul > li > a {
+/* line 63, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+nav > ul > li a {
   font-weight: normal;
   text-decoration: none;
-  color: #008;
+  color: #696;
+  padding: 12px;
 }
 
-/* line 79, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
-nav > ul > li > a:visited {
-  color: #008;
-}
-
-/* line 83, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
-nav > ul > li:hover {
-  background-color: #777;
-  box-shadow: none;
+/* line 70, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+nav > ul > li a:hover {
+  background-color: #222;
+  color: #999;
+  border: 1px solid #111;
 }

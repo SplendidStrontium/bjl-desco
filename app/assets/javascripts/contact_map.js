@@ -7,7 +7,7 @@ $(document).ready(function initialize() {
     center: bjlLoc,
     zoom: 13
   };
-  map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var marker = new google.maps.Marker({
     position: bjlLoc,
     title: 'B.J. Laura & Son',
