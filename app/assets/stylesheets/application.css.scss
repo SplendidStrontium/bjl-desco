@@ -16,8 +16,7 @@
 
 html{
   width: 100%;
-  background-color: #888;
-	background-image: url(/assets/bg-50tilepx-eggblue.jpg)
+  background-color: #363;
 }
 
 body{
@@ -28,49 +27,51 @@ body{
 }
 
 #logo_top{
-	margin-top: 5px;
+	padding: 5px;
 	text-align: center;
+	background-color: #363;
+}
+
+#container{
+	background-color: #000;
+	display: inline-block;
 }
 
 #content-container{
 	padding: 10px;
-	width: 760px;
+	width: 800px;
   background-color: #ddd;
 	border-bottom: 1px solid #000;
 	display: inline-block;
 }
 
 nav{
-	height: 40px;
-  background-color: #777;
+	height: 35px;
+	line-height: 35px;
+  background-color: #333;
   overflow: hidden;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border: 1px solid #000;
+	border-radius: 0px;
 }
 
 nav > ul > li{
   font-family: 'sanchez_regular';
   font-weight: bold;
-  display: inline;
-  color: #111;
-  background-color: #999;
-  border-radius: 5px;
-  box-shadow: 0px 1px 3px 3px #555;
-  line-height: 2em;
-  padding: 0.5em 0.5em;
+  display: inline-block;
+  color: #888;
+
+
 }
 
-nav > ul > li > a{
+nav > ul > li a{
   font-weight: normal;
   text-decoration: none;
-  color: #008;
+  color: #696;
+	padding: 12px;
 }
 
-nav > ul > li > a:visited{
-  color: #008;
-}
-
-nav > ul > li:hover{
-  background-color: #777;
-  box-shadow: none;
+nav > ul > li a:hover{
+  background-color: #222;
+	color: #999;
+	border: 1px solid #111;
 }
