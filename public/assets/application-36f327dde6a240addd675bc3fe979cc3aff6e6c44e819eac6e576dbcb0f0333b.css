@@ -8162,54 +8162,42 @@ input {
 }
 /* line 5, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #home_summary {
-  height: 100%;
   font-family: 'sanchez_regular';
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* line 12, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 9, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #about_us {
-  height: 100%;
   font-family: 'sanchez_regular';
-  margin-left: auto;
-  margin-right: auto;
+}
+
+/* line 14, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+#our_clients {
+  font-family: 'sanchez_regular';
 }
 
 /* line 19, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
-#our_clients {
-  height: 100%;
-  font-family: 'sanchez_regular';
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 26, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #contact-info {
-  height: 100%;
   font-family: 'sanchez_regular';
   font-size: 0.9em;
-  float: left;
-  width: 250px;
 }
 
-/* line 34, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 25, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-container {
-  border: none;
+  border: 1px solid #000;
   width: 550px;
   height: 400px;
   background-color: #ccc;
   margin-left: auto;
 }
 
-/* line 42, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 33, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-canvas {
   border: none;
   width: 550px;
   height: 400px;
 }
 
-/* line 48, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 39, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #email-topbar {
   width: 50%;
   color: #aaa;
@@ -8250,40 +8238,35 @@ input {
  */
 /* line 21, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 html {
-  width: 100%;
   background-color: #363;
 }
 
-/* line 26, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 25, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 body {
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #ddd;
   overflow: auto;
 }
 
-/* line 33, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 30, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 #logo_top {
   padding: 5px;
   text-align: center;
   background-color: #363;
 }
 
-/* line 39, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 36, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 #container {
   display: inline-block;
 }
 
-/* line 43, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 40, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 #content-container {
-  width: 800px;
   border-bottom: 1px solid #000;
   display: inline-block;
-  background-color: #eee;
-  padding: 5px;
+  padding: 15px;
 }
 
-/* line 51, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 46, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav {
   height: 35px;
   line-height: 35px;
@@ -8292,7 +8275,7 @@ nav {
   border: 1px solid #000;
 }
 
-/* line 59, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 54, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li {
   font-family: 'sanchez_regular';
   font-weight: bold;
@@ -8300,7 +8283,7 @@ nav > ul > li {
   color: #bbb;
 }
 
-/* line 66, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 61, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li a {
   font-weight: normal;
   text-decoration: none;
@@ -8308,7 +8291,7 @@ nav > ul > li a {
   padding: 12px;
 }
 
-/* line 73, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 68, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li a:hover {
   background-color: #222;
   color: #999;

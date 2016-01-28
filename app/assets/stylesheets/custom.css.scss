@@ -3,14 +3,28 @@
 
 /* universal */
 
+html{
+  background-color: #363;
+}
+
 body {
 	padding-top: 0px;
+	background-color: #ddd;
+	overflow: auto;
+}
+
+#logo_top{
+	padding: 5px;
+	text-align: center;
+	background-color: #363;
 }
 
 /* typography */
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.6em;
+	font-weight: bold;
+	padding-left: 20px;
 }
 
 /* mixins, variables, etc */
@@ -84,8 +98,8 @@ input {
 }
 
 .explanatorytxt{
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 25px;
 	text-align: center;
 
 }

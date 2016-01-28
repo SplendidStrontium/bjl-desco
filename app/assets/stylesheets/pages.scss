@@ -3,36 +3,26 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #home_summary{
-	height: 100%;
   font-family: 'sanchez_regular';
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #about_us{
-	height: 100%;
   font-family: 'sanchez_regular';
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 #our_clients{
-	height: 100%;
 	font-family: 'sanchez_regular';
-	margin-left: auto;
-	margin-right: auto;
+
 }
 
 #contact-info{
-	height: 100%;
   font-family: 'sanchez_regular';
-	font-size: 0.9em;
-  float: left;
-  width: 250px;
+
 }
 
 #map-container{
-  border: none;
+  border: 1px solid #000;
   width: 550px;
   height: 400px;
   background-color: #ccc;
