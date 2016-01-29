@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 	get '/about', :to => 'pages#about'
   get '/contact', :to => 'pages#contact' 
   get '/clients', :to => 'pages#clients'
+	get '/employment', :to => 'pages#employment'
 	get '/signup', :to => 'users#new'
 	get '/login', :to => 'sessions#new'
 	post '/login', :to => 'sessions#create'
