@@ -10995,7 +10995,7 @@ function drw_email(context){
   context.fillText("dck@bjlaura.com", 780, 110);
 }
 ;
-
+// sets up and display google map on contact.html
 
 var map;
 $(document).ready(function initialize() {
@@ -11004,7 +11004,7 @@ $(document).ready(function initialize() {
     center: bjlLoc,
     zoom: 13
   };
-  map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
   var marker = new google.maps.Marker({
     position: bjlLoc,
     title: 'B.J. Laura & Son',
@@ -11017,9 +11017,6 @@ $(document).ready(function() {
 });
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
-
-
 
 (function() {
 

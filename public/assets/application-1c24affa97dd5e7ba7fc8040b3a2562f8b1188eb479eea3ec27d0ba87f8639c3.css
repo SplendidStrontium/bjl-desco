@@ -8176,48 +8176,22 @@ input {
   font-weight: normal;
   font-style: normal;
 }
-/* line 5, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
-#home_summary {
-  font-family: 'sanchez_regular';
-}
-
-/* line 9, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
-#about_us {
-  font-family: 'sanchez_regular';
-}
-
-/* line 14, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
-#our_clients {
-  font-family: 'sanchez_regular';
-}
-
-/* line 19, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
-#contact-info {
-  font-family: 'sanchez_regular';
-}
-
-/* line 24, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
-#employment {
-  font-family: 'sanchez_regular';
-}
-
-/* line 28, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 7, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-container {
   border: 1px solid #000;
   width: 550px;
   height: 400px;
   background-color: #ccc;
-  margin-left: auto;
 }
 
-/* line 36, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 14, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-canvas {
   border: none;
   width: 550px;
   height: 400px;
 }
 
-/* line 42, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 20, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #email-topbar {
   width: 50%;
   color: #aaa;
@@ -8274,12 +8248,13 @@ nav {
 /* line 43, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li {
   font-family: 'sanchez_regular';
+  font-size: 1.2em;
   font-weight: bold;
   display: inline-block;
   color: #bbb;
 }
 
-/* line 50, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 51, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li a {
   font-weight: normal;
   text-decoration: none;
@@ -8287,7 +8262,7 @@ nav > ul > li a {
   padding: 12px;
 }
 
-/* line 57, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
+/* line 58, /home/paige/bjldesco/app/assets/stylesheets/application.css.scss */
 nav > ul > li a:hover {
   background-color: #222;
   color: #999;
