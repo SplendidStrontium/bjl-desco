@@ -8176,22 +8176,14 @@ input {
   font-weight: normal;
   font-style: normal;
 }
-/* line 7, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
-#map-container {
-  border: 1px solid #000;
-  width: 550px;
-  height: 400px;
-  background-color: #ccc;
-}
-
-/* line 14, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 6, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-canvas {
   border: none;
-  width: 550px;
-  height: 400px;
+  width: 620px;
+  height: 500px;
 }
 
-/* line 20, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 12, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #email-topbar {
   width: 50%;
   color: #aaa;

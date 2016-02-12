@@ -6,7 +6,7 @@
 <div class="container-fluid">
 <div class="row-fluid">
 
-<div id="contact-info" class="col-md-4">
+<div id="contact-info" class="col-md-3">
 		Monday - Friday: 9:00AM - 5:00PM<br/>
 		<br/><br/>
 		45-58 162nd Street<br/>
@@ -25,7 +25,7 @@
 		<a href="/users/1">Paige</a>: pnk@descoservice.com<br/>
 </div>
 
-<div class="col-md-8">
+<div class="col-md-9">
   <div id="map-canvas"></div>
 </div>
 
@@ -37,14 +37,31 @@
 <script type="text/javascript">
 
 var map;
+var marker;
+var ourplace;
+var myLoc = {lat: 40.7553961, lng: -73.8047598};
 function initMap() {
+		
   map = new google.maps.Map(document.getElementById('map-canvas'), {
-    center: {lat: 40.755, lng: -73.809},
-    zoom: 13
+    center: myLoc,
+    zoom: 15
   });
+
+	marker = new google.maps.Marker({
+		map: map,
+		position: myLoc,
+		place: ourplace,
+		title: '45-58 162nd St, Flushing NY 11358',
+		visible: true
+	});
+
+	ourplace = new google.maps.MarkerPlace({
+		location: myLoc,
+		placeId: 'ChIJE0IWyTBgwokRY2JQQW_RBr0'
+	});
 }
 </script>
 <script async defer 
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPpNUmiLxK8B3NRAS9YyNQT5JQV8Tjf4g&callback=initMap">
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPpNUmiLxK8B3NRAS9YyNQT5JQV8Tjf4g&signed_in=true&callback=initMap">
 </script>
 

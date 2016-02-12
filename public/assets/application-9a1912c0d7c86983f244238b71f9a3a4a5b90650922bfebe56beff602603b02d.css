@@ -8178,9 +8178,9 @@ input {
 }
 /* line 6, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-canvas {
-  border: none;
-  width: 550px;
-  height: 400px;
+  border: 1px solid #333;
+  width: 620px;
+  height: 500px;
 }
 
 /* line 12, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
