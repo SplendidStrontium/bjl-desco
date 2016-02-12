@@ -8050,7 +8050,12 @@ body {
 }
 
 /* typography */
-/* line 24, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 25, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 29, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 h2 {
   font-size: 1.6em;
   font-weight: bold;
@@ -8058,7 +8063,7 @@ h2 {
 }
 
 /* mixins, variables, etc */
-/* line 40, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 45, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 .debug_dump {
   clear: both;
   float: left;
@@ -8070,27 +8075,27 @@ h2 {
 }
 
 /* sidebar */
-/* line 51, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 56, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 aside section.user_info {
   margin-top: 20px;
 }
-/* line 54, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 59, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 aside section {
   padding: 10px 0;
   margin-top: 20px;
 }
-/* line 57, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 62, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 aside section:first-child {
   border: 0;
   padding-top: 0;
 }
-/* line 61, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 66, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 aside section span {
   display: block;
   margin-bottom: 3px;
   line-height: 1;
 }
-/* line 66, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 71, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 aside section h1 {
   font-size: 1.4em;
   font-weight: bold;
@@ -8100,20 +8105,20 @@ aside section h1 {
   margin-top: 0px;
 }
 
-/* line 77, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 82, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 .gravatar {
   float: left;
   margin-left: 20px;
   margin-right: 10px;
 }
 
-/* line 83, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 88, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 .gravatar_edit {
   margin-top: 15px;
 }
 
 /* forms */
-/* line 89, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 94, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
@@ -8123,35 +8128,35 @@ input, textarea, select, .uneditable-input {
   box-sizing: border-box;
 }
 
-/* line 96, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 101, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 input {
   height: auto !important;
 }
 
-/* line 100, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 105, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 .explanatorytxt {
   margin-top: 15px;
   margin-bottom: 25px;
   text-align: center;
 }
 
-/* line 107, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 112, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 .btn-primary {
   margin-top: 20px;
   font-size: 1.6em;
 }
 
-/* line 112, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 117, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 #error_explanation {
   color: red;
 }
-/* line 114, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 119, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 #error_explanation ul {
   color: red;
   margin: 0 0 30px 0;
 }
 
-/* line 122, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
+/* line 127, /home/paige/bjldesco/app/assets/stylesheets/custom.css.scss */
 .field_with_errors .form-control {
   color: #a94442;
 }
@@ -8179,11 +8184,12 @@ input {
 /* line 6, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #map-canvas {
   border: 1px solid #333;
-  width: 620px;
+  width: 700px;
   height: 500px;
+  padding: 10px;
 }
 
-/* line 12, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
+/* line 13, /home/paige/bjldesco/app/assets/stylesheets/pages.scss */
 #email-topbar {
   width: 50%;
   color: #aaa;
