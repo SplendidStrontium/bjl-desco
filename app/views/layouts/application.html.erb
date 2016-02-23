@@ -14,7 +14,7 @@
 
     <nav>
       <ul id="navbar">
-	<% [["Home", :root], ["About Us", :about], ["Our Clients", :clients], ["Contact Us", :contact], ["Employment", :employment], ["Sign Up", :signup], ["Log In", :login]].each do |name,url| %>
+	<% [["Home", :root], ["About Us", :about], ["Our Clients", :clients], ["Contact Us", :contact], ["Employment", :employment], ["Fallon", :fallon], ["Sign Up", :signup], ["Log In", :login]].each do |name,url| %>
 	  <li><%= link_to_unless_current(name, url) %></li>
 	<% end %>
       </ul>
