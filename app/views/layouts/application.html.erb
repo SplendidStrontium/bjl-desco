@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bjl</title>
+    <%= yield :head %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,8 +9,33 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  
+  <div id="logo_top">
+	<%= image_tag "banner-w724px.jpg" %>
+  </div>
+  
+  <nav>
+    <ul id="navbar">
+	<% [["Home", :root], ["About Us", :about], ["Our Clients", :clients], ["Contact Us", :contact], ["Employment", :employment]].each do |name,url| %>
+	  <li><%= link_to_unless_current(name, url) %></li>
+	<% end %>
+    </ul>
+  </nav>
 
   <body>
+  
+    <div class="container">
+        <% flash.each do |message_type, message| %>
+            <div class="alert alert-<%= message_type %>"><%= message %></div>
+	<% end %>
+    </div>
+
+<div id="content-container">
+  
     <%= yield %>
+    
+    <%= debug(params) if Rails.env.development? %> 
+</div>
+
   </body>
 </html>
