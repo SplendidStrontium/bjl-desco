@@ -32,6 +32,7 @@ nav{
   background-color: #333;
   overflow: hidden;
   border: 1px solid #000;
+  font-family: 'sanchez_regular';
 }
 
 nav > ul > li{
@@ -52,6 +53,7 @@ nav > ul > li a:hover{
   background-color: #222;
   color: #999;
   border: 1px solid #111;
+  font-family: 'sanchez-italic';
 }
 
 
@@ -64,6 +66,7 @@ body {
   padding-top: 0px;
   background-color: #ddd;
   overflow: auto;
+  font-family: 'sanchez-regular';
 }
 
 #logo_top{
@@ -85,5 +88,32 @@ h2 {
 #google-map{
   height: 400px;
   width: 600px;
+}
+
+@font-face {
+  font-family: 'nathaniel';
+  src: url('nathaniel-webfont.eot');
+  src: url('nathaniel-webfont.svg');
+  src: url('nathaniel-webfont.ttf');
+  src: url('nathaniel-webfont.woff');
+  src: url('nathaniel-webfont.woff2');
+}
+
+@font-face {
+  font-family: 'sanchez-italic';
+  src: url('sanchezregular-ita-webfont.eot');
+  src: url('sanchezregular-ita-webfont.svg');
+  src: url('sanchezregular-ita-webfont.ttf');
+  src: url('sanchezregular-ita-webfont.woff');
+  src: url('sanchezregular-ita-webfont.woff2');
+}
+
+@font-face {
+  font-family: 'sanchez-regular';
+  src: url('sanchezregular-webfont.eot');
+  src: url('sanchezregular-webfont.svg');
+  src: url('sanchezregular-webfont.ttf');
+  src: url('sanchezregular-webfont.woff');
+  src: url('sanchezregular-webfont.woff2');
 }
 
